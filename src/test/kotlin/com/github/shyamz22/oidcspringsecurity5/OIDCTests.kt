@@ -23,7 +23,7 @@ class OIDCTests {
     @Test
     fun unAuthenticatedRequestIsRedirectedToIdentityProvider() {
 
-        mockMvc.perform(get("/me"))
+        mockMvc.perform(get("/"))
                 .andExpect(status().isFound)
                 .andExpect(redirectedUrlPattern("https://accounts.google.com/o/oauth2/v2/auth/**"))
     }

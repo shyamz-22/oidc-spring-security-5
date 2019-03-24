@@ -1,0 +1,23 @@
+logging.level.org.springframework: INFO
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            provider: google
+            client-id: 631596480753-ahua7rma9dhaadl2tbhioluus6ojidoo.apps.googleusercontent.com
+            client-secret: ${client.secret}
+            client-authentication-method: basic
+            authorization-grant-type: authorization_code
+            redirectUri: http://localhost:8080/oauth
+            scope:
+              - openid
+              - email
+              - profile
+              - https://www.googleapis.com/auth/tasks.readonly
+        provider:
+          google:
+            issuer-uri: https://accounts.google.com
+
+
