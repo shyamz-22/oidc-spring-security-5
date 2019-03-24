@@ -6,11 +6,10 @@ spring:
         registration:
           google:
             provider: google
-            client-id: 631596480753-ahua7rma9dhaadl2tbhioluus6ojidoo.apps.googleusercontent.com
-            client-secret: ${client.secret}
+            client-id: <<your-client-id>>
+            client-secret: <<your-client-secret>> # @see https://console.developers.google.com/apis/
             client-authentication-method: basic
             authorization-grant-type: authorization_code
-            redirectUri: http://localhost:8080/oauth
             scope:
               - openid
               - email

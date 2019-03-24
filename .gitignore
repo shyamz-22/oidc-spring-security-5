@@ -38,3 +38,6 @@ HELP.md
 ### VS Code ###
 .vscode/
 
+### test fixtures ###
+**/application-local.yml
+
